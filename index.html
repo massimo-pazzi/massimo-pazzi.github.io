@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Максим Поципух — аналитика рынка, продукт с ИИ, стратегия</title>
+<meta name="description" content="Максим Поципух (Maxim Potsipukh): портфолио — анализ рынка на открытых данных, продуктовые концепции с ИИ, обоснование проектов и доклад на РМЭФ-2026. Пять кейсов с расчётами и источниками.">
+<meta name="author" content="Максим Поципух (Maxim Potsipukh)">
+<meta name="yandex-verification" content="10d8f952028e1b53" />
+<link rel="canonical" href="https://massimo-pazzi.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Максим Поципух — портфолио">
+<meta property="og:title" content="Максим Поципух — аналитика рынка, продукт с ИИ, стратегия">
+<meta property="og:description" content="Пять кейсов: анализ рынка на открытых данных, продуктовые концепции с ИИ, обоснование проектов и доклад на РМЭФ-2026.">
+<meta property="og:url" content="https://massimo-pazzi.github.io/">
+<meta property="og:image" content="https://massimo-pazzi.github.io/img/og.jpg">
+<meta property="profile:first_name" content="Максим">
+<meta property="profile:last_name" content="Поципух">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":"https://massimo-pazzi.github.io/","inLanguage":"ru","mainEntity":{"@type":"Person","name":"Максим Поципух","alternateName":"Maxim Potsipukh","url":"https://massimo-pazzi.github.io/","image":"https://massimo-pazzi.github.io/img/author.jpg","sameAs":["https://t.me/maxim_potsipukh","https://max.ru/u/f9LHodD0cOI-rqGbPaCc2EshAXaEgw4ABwO8e2-ng4zK-otGeBnO04IzH5g","https://github.com/massimo-pazzi"]},"hasPart":[{"@type":"Article","headline":"Рост цен в отелях Петербурга перестал окупаться","url":"https://massimo-pazzi.github.io/hotel-market-case/"},{"@type":"Article","headline":"Цифровой двойник жилого фонда Москвы: от аварийного ремонта к прогнозу поломок","url":"https://massimo-pazzi.github.io/housing-digital-twin-case/"},{"@type":"Article","headline":"Как доказать окупаемость ИИ-проекта, не зная маржи заказчика","url":"https://massimo-pazzi.github.io/b2b-value-case/"},{"@type":"Article","headline":"ИИ-ассистент для федеральной сети быстрого питания: как спроектировать продукт не имея данных заказчика","url":"https://massimo-pazzi.github.io/fastfood-assistant-case/"},{"@type":"Article","headline":"Интерфейс энергетики будущего: доклад на РМЭФ-2026","url":"https://massimo-pazzi.github.io/rief-2026-talk/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f5f6f7; --surface:#ffffff; --ink:#18202a; --ink-2:#4b5662; --muted:#6c7782; --rule:#d9dee3; --accent:#1f5fae; --accent-soft:#e6eef8;}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){color-scheme:dark; --bg:#11161c; --surface:#171d24; --ink:#e7ebef; --ink-2:#b5bec7; --muted:#8c96a0; --rule:#2c343d; --accent:#79a9e8; --accent-soft:#1c2632;}
+}
+:root[data-theme="dark"]{color-scheme:dark; --bg:#11161c; --surface:#171d24; --ink:#e7ebef; --ink-2:#b5bec7; --muted:#8c96a0; --rule:#2c343d; --accent:#79a9e8; --accent-soft:#1c2632;}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px; line-height:1.6; padding-inline:16px; padding-block:48px 64px;}
+.page{max-width:48rem; margin:0 auto;} a{color:var(--accent);}
+.hero{display:flex; gap:20px; align-items:center; margin-bottom:22px;}
+.hero img{width:96px; height:96px; border-radius:50%; object-fit:cover; border:1px solid var(--rule); flex:none;}
+h1{font-size:clamp(1.9rem,5vw,2.5rem); line-height:1.15; margin:0 0 4px; letter-spacing:-.01em;}
+.latin{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:13px; color:var(--muted); letter-spacing:.04em;}
+.links{margin-top:6px; font-size:15px;}
+.lead{font-size:18px; color:var(--ink-2); margin:0 0 30px;}
+h2{font-size:1.2rem; margin:0 0 12px;}
+.cases{display:grid; gap:12px;}
+.case{display:block; padding:16px 18px; background:var(--surface); border:1px solid var(--rule); border-radius:8px; text-decoration:none; color:inherit;}
+.case:hover{border-color:var(--accent);}
+.tag{font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:var(--accent);}
+.case h3{font-size:1.05rem; line-height:1.35; margin:4px 0 6px;}
+.case p{margin:0; font-size:15px; color:var(--ink-2);}
+.go{display:inline-block; margin-top:8px; font-size:14px; color:var(--accent);}
+footer{margin-top:40px; padding-top:16px; border-top:1px solid var(--rule); font-size:13.5px; color:var(--muted);}
+@media (max-width:520px){ body{font-size:16px; padding-block:28px 48px;} .hero{align-items:flex-start;} .hero img{width:72px; height:72px;} }
+</style>
+</head>
+<body>
+<main class="page">
+<div class="hero">
+  <img src="img/author.jpg" alt="Максим Поципух" width="96" height="96">
+  <div>
+    <h1>Максим Поципух</h1>
+    <div class="latin">Maxim Potsipukh</div>
+    <div class="links"><a href="https://t.me/maxim_potsipukh" target="_blank" rel="noopener">Telegram</a> ·
+      <a href="https://max.ru/u/f9LHodD0cOI-rqGbPaCc2EshAXaEgw4ABwO8e2-ng4zK-otGeBnO04IzH5g" target="_blank" rel="noopener">Max</a> ·
+      <a href="https://github.com/massimo-pazzi" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</div>
+
+<p class="lead">Аналитика рынка, продукт с ИИ, обоснование проектов и стратегия. Ниже — пять кейсов:
+исследование рынка на открытых данных, две продуктовые концепции, обоснование ИИ-проекта и доклад на
+Российском международном энергетическом форуме. В каждом — расчёты, источники и выводы, которые можно проверить.</p>
+
+<h2>Кейсы</h2>
+<div class="cases">
+  <a class="case" href="https://massimo-pazzi.github.io/rief-2026-talk/">
+    <span class="tag">Стратегия и аналитика рынка</span>
+    <h3>Интерфейс энергетики будущего: доклад на РМЭФ-2026</h3>
+    <p>Как искусственный интеллект меняет взаимодействие человека с энергетической инфраструктурой — от ста лет эволюции интерфейса до пятого поколения и барьеров на объектах КИИ.</p>
+    <span class="go">Открыть кейс →</span></a>
+  <a class="case" href="https://massimo-pazzi.github.io/hotel-market-case/">
+    <span class="tag">Анализ рынка</span>
+    <h3>Рост цен в отелях Петербурга перестал окупаться</h3>
+    <p>Исследование по открытым данным: спрос и номерной фонд, сезонность, сегменты, города и прогноз; дашборд в Yandex DataLens.</p>
+    <span class="go">Открыть кейс →</span></a>
+  <a class="case" href="https://massimo-pazzi.github.io/housing-digital-twin-case/">
+    <span class="tag">Новый продукт</span>
+    <h3>Цифровой двойник жилого фонда Москвы: от аварийного ремонта к прогнозу поломок</h3>
+    <p>Продуктовая концепция: для кого продукт, метрики успеха, прогноз отказов инженерных систем, интерфейс прототипа и этапы внедрения.</p>
+    <span class="go">Открыть кейс →</span></a>
+  <a class="case" href="https://massimo-pazzi.github.io/b2b-value-case/">
+    <span class="tag">Обоснование проекта</span>
+    <h3>Как доказать окупаемость ИИ-проекта, не зная маржи заказчика</h3>
+    <p>Обоснование ИИ-проекта для грузовой авиакомпании: цена бездействия, две картины ценности и пороговая маржа, которую заказчик проверяет сам.</p>
+    <span class="go">Открыть кейс →</span></a>
+  <a class="case" href="https://massimo-pazzi.github.io/fastfood-assistant-case/">
+    <span class="tag">Продукт с ИИ</span>
+    <h3>ИИ-ассистент для федеральной сети быстрого питания: как спроектировать продукт не имея данных заказчика</h3>
+    <p>Темы обращений и задачи гостя, границы продукта, очерёдность релизов, нагрузка, экономика и риски.</p>
+    <span class="go">Открыть кейс →</span></a>
+</div>
+
+<footer>© Максим Поципух (Maxim Potsipukh), 2026 · Материалы кейсов — в репозиториях на <a href="https://github.com/massimo-pazzi" target="_blank" rel="noopener">GitHub</a>.</footer>
+</main>
+</body>
+</html>
